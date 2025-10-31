@@ -1,5 +1,4 @@
-TELEGRAM_TOKEN = "8361243003:AAEkkPW197WYeSApN1CuCTvIrigr-13EzCI"
-ADMIN_CHAT_ID = "5400588836"
+
 import os
 import logging
 from telegram import Update, InputMediaPhoto
@@ -8,8 +7,8 @@ from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, Comma
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = os.environ.get(TELEGRAM_TOKEN)  # set this in your environment
-ADMIN_CHAT_ID = int(os.environ.get("5400588836", 0))  # set admin id or leave 0 to print and set later
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8361243003:AAEkkPW197WYeSApN1CuCTvIrigr-13EzCI")
+ADMIN_CHAT_ID = int(os.environ.get("ADMIN_CHAT_ID", "5400588836")) # set admin id or leave 0 to print and set later
 
 # Optionally restrict allowed senders (set allowed user IDs as ints)
 ALLOWED_SENDERS = None  # e.g. {123456789, 987654321} or None to allow everyone
