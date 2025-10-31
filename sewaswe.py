@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, Comma
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8361243003:AAEkkPW197WYeSApN1CuCTvIrigr-13EzCI")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8361243003:AAF3PyAyY5cdSUzh2VJyDy-TWjZ2Ionv4x8")
 ADMIN_CHAT_ID = int(os.environ.get("ADMIN_CHAT_ID", "5400588836")) # set admin id or leave 0 to print and set later
 
 # Optionally restrict allowed senders (set allowed user IDs as ints)
